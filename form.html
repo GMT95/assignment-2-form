@@ -1,0 +1,113 @@
+<html>
+
+<head>
+
+<title>
+ASSIGNMENT # 2: FORM
+</title>
+
+<style>
+
+.tf
+{
+
+background-color: #82CFFD;
+color: #2E0854;
+font-size: 15px;
+padding: 10px 15px;
+margin: 5px 5px;
+border-radius:8px;
+width:4.6cm;
+font-family: comic sans ms;
+
+
+ 
+}
+
+strong
+{ 
+
+font-family: comic sans ms;
+color:#EE00EE;
+
+}
+
+#name
+{width:7cm; }
+
+#email
+{ width:7cm;}
+
+body
+{background-image:url("bck2.jpg");
+  background-size: cover; }
+  
+  
+h1 { color: #2E0854; 
+ font-family: comic sans ms;
+ 
+ }  
+
+
+.btn 
+{
+background-color: #2E0854;
+color: white;
+
+ font-size: 20px;
+ padding: 10px 15px;
+ border-radius:30px;
+width:4cm;
+
+}
+ 
+.btn:hover
+{
+background-color: maroon; 
+} 
+
+</style>
+
+<script>
+
+
+var n = document.form1.name.value;
+var a =  document.form1.age.value;
+var e =  document.form1.email.value;
+var p = document.form1.phone.value;
+
+
+
+
+</script>
+
+
+
+</head>
+
+<h1 align="center">FORM</h1>
+
+<body>
+
+
+
+
+<div>
+
+<form id="form1">
+<strong>NAME:</strong><input type="text"  id="name" class="tf" maxlength="20"><br>
+<strong>AGE:</strong><input type="text"  id="age" class="tf" maxlength="3"><br>
+<strong>EMAIL:</strong><input type="text"  id="email" class="tf" maxlength="30"><br>
+<strong>CONTACT #:</strong><input type="text"  id="phone" class="tf" maxlength="14"><br>
+<input type="reset" value="RESET" id="reset" class="btn">
+<input type="button" value="SUBMIT" id="reset" class="btn" onclick="document.getElementById("div2").innerHTML = 'n';">
+
+</form>
+
+</div>
+
+<div id="div2"></div>
+
+</body>
+
+</html>
